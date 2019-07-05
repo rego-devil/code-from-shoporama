@@ -1,0 +1,56 @@
+:local {
+  @import "~styles/core/vars";
+
+  .odd {
+    background: #F8F8F8;
+  }
+
+  .wrapper {
+    margin-left: -33px;
+    margin-right: -43px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 33px 15px 33px;
+  }
+
+  .column {
+    flex: 0 0 40%;
+    justify-content: space-between
+  }
+
+  .description {
+    font-size: 12px;
+    padding-top: 13px;
+    letter-spacing: -0.5px
+  }
+
+  .commonTitle {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .item { 
+      display: block;
+      padding: 0;
+    }
+
+    .description {
+      display: none;
+    }
+
+    .column {
+      padding: 15px 33px 15px 33px;
+
+      &:first-child {
+        background: #F8F8F8;
+      }
+    }
+
+    .odd {
+      background: none;
+    }
+  }
+}
